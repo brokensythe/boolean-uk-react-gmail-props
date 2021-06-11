@@ -2,6 +2,7 @@
 // toggleRead
 // toggleStar
 
+import "../styling/main.css"
 import Emails from "./mainComponents/Emails";
 
 function Main(props) {

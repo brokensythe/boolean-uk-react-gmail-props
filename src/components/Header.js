@@ -1,3 +1,5 @@
+import "../styling/header.css"
+
 function Header(props) {
     return     <header className="header">
     <div className="left-menu">
