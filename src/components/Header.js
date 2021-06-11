@@ -14,14 +14,7 @@ function Header(props) {
     </div>
 
     <div className="search">
-      <input onChange={(e)=>{
-          if (e.target.value!=="") {
-              const filteredEmails = props.emails.filter(email=>email.title.toLowerCase().includes(e.target.value.toLowerCase()))
-              props.setEmails(filteredEmails)
-          } else {
-            props.setEmails(props.initialEmails)
-          }
-      }} className="search-bar" placeholder="Search mail" />
+      <input onChange={e=>props.setSearchInput(e.target.value)} className="search-bar" placeholder="Search mail" value={props.searchInput} />
     </div>
   </header>
 }
